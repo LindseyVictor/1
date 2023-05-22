@@ -1,0 +1,9 @@
+function count_words($text) {
+    $words = str_word_count($text, 1);
+    $word_count = array_count_values($words);
+    return $word_count;
+}
+
+$string = 'The quick brown fox jumps over the lazy dog';
+$word_counts = count_words($string);
+print_r($word_counts);
